@@ -34,4 +34,7 @@ This project is only for studying and investigating the WebRTC.
   9. 下载完执行  
       gn gen out/default/  
       ninja -C out/default/ 就可以了  
-      编译完成后会发现peerconnection_client和peerconnecttion_server，以及会找到webrtc.lib等。后面可以用VS打开all.sln，进行调式运行了。至此，基本的开发环境算是搭好了。  
+      编译完成后会发现peerconnection_client和peerconnecttion_server，以及会找到webrtc.lib等。后面可以用VS打开all.sln，进行调式运行了。至此，基本的开发环境算是搭好了。
+  10. 另外如果下载过程中提示windows 10 kit找不到，而你装VS的时候确定装过了。用下面方法：  
+      win 10 SDK还需要安装Debugging Tools，安装步骤为 控制面板 → 程序 → 程序和功能 → 选中“Windows Software Development Kit” → 变更 → Change → Check “Debugging Tools For Windows” → Change.    
+
