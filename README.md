@@ -18,6 +18,10 @@ This project is only for studying and investigating the WebRTC.
   6. 其他一些设置
      设置BOTO代理，解决download google storage失败问题： 
      set NO_AUTH_BOTO_CONFIG=$depot_tools_path/http_proxy.boto (其中$depot_tools_path是你的安装路径)
+     http_proxy.boto里面的内容：
+     [Boto]
+     proxy=127.0.0.1
+     proxy_port=1080
      设置不再次下载工具链： 
      set DEPOT_TOOLS_WIN_TOOLCHAIN=0 
      设置生成工程环境变量： 
